@@ -83,7 +83,7 @@ recommendRecipes = (msg) => {
     })
 
     if (possibleRecipes.length > 0){
-      return 'We can make a: ' + possibleRecipes.join(', ')
+      return 'You can make a: ' + possibleRecipes.join(', ') + 'with those ingredients.'
     }else {
       return 'No recipes'
     }
