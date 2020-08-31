@@ -62,7 +62,7 @@ async function handleSubmit(evt) {
     // the bot is thinking
     setTimeout(
         () => updateMessage(response),
-        500 - elapsedTime
+        800 - elapsedTime
     );
 }
 
