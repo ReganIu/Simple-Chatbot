@@ -1,8 +1,7 @@
-
 var request = require('request-promise');
 
 botName = () => {
-  return 'UofT Bot';
+  return 'ChatBot';
 }
 
 
@@ -13,7 +12,6 @@ const WEATHER_STACK_API_KEY = '7b80c48f84ad7ff5e33aa4b26a287035';
 getWeather = async (msg) => {
   const city = msg.split(' in ').slice(-1)[0]
   //const city = msg.split(' in ')[1]
-  //console.log(city)
   const weatherURL = `http://api.weatherstack.com/current?access_key=${WEATHER_STACK_API_KEY}&query=${city}`
   
   //await tells the code to wait till we get a response before moving on
@@ -23,13 +21,13 @@ getWeather = async (msg) => {
 }
 
 const movies = {
-  horror: ['hereditary', 'blair witch project'],
-  comedy: ['rush hour', "despicable me"]
+  horror: ['Hereditary', 'Blair Witch Project'],
+  comedy: ['Rush Hour', "Despicable Me"]
 }
 
 const playlist = {
-  happy: ['happy by pharell williams'],
-  sad: ['my future by billie eilish']
+  happy: ['Happy by Pharell Williams', 'Midsummer Madness by 88rising'],
+  sad: ['my future by Billie Eilish', 'Pills by Joji']
 }
 
 getRandomItemInArray = (arr) => {
@@ -97,7 +95,7 @@ recommendRecipes = (msg) => {
  * @return The bot's self-introduction
  */
 introduce = () => {
-    return "Hello there! My name is Bot. What's your name?";
+    return "Hello there! My name is ChatBot. What's your name?";
 }
 
 /**
