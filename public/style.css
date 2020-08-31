@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
-    --primary-light: #E6FFFA;
-    --primary: #81E6D9;
+    --primary-light: rgb(168, 255, 255);
+    --primary: rgb(20, 176, 238);
     --primary-dark: #319795;
     --secondary: #5A67D8;
 }
@@ -58,7 +58,7 @@ body, input {
 
 .bot__name {
     margin: .25rem;
-    font-size: .75rem;
+    font-size: 1.0rem;
 }
 
 .bot__message {
